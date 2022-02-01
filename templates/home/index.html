@@ -1,0 +1,375 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home</title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Custom Stylesheets -->
+  <link rel="stylesheet" href="{% static 'css/index.css' %}" />
+  <link rel="stylesheet" href="{% static 'css/ticker.css' %}" />
+
+  <!-- Jquery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+  <!-- Slider -->
+  <link rel="stylesheet" type="text/css" href="{% static 'css/slider/amazingslider.css' %}">
+  <script src="{% static 'js/slider/amazingslider.js' %}"></script>
+  <script src="{% static 'js/slider/initslider.js' %}"></script>
+
+
+</head>
+
+<body>
+  <!-- Header date -->
+  <div class="container">
+    <div class="datetime">
+      <h1>Official site of Shahid Monsur Ali Medical College</h1>
+      <h1>{{ english_date }} | {{ bangla_date }}</h1>
+      <button>Login</button>
+    </div>
+  </div>
+  <!-- Header date End-->
+
+  <!-- Header Navigation-->
+  <header class="header">
+    <div class="container">
+      <div class="header-main">
+        <div class="logo">
+          <a href="#"><img src="{% static "images/logo.png" %}" alt="" srcset=""></a>
+          <span>Shahid Monsur Ali Medical College</span>
+        </div>
+        <div class="open-nav-menu">
+          <span></span>
+        </div>
+        <div class="menu-overlay"></div>
+        <!-- navigation menu start -->
+        <nav class="nav-menu">
+          <div class="close-nav-menu">
+            <i class="fas fa-times"></i>
+          </div>
+          <ul class="menu">
+            <li class="menu-item menu-item-has-children">
+              <a href="#" data-toggle="sub-menu">Home <i class="plus"></i></a>
+              <ul class="sub-menu">
+                <li class="menu-item"><a href="#">Home 1</a></li>
+                <li class="menu-item"><a href="#">Home 2</a></li>
+                <li class="menu-item"><a href="#">Home 3</a></li>
+                <li class="menu-item"><a href="#">Home 4</a></li>
+              </ul>
+            </li>
+            <li class="menu-item">
+              <a href="#">About</a>
+            </li>
+            <li class="menu-item">
+              <a href="#">Services</a>
+            </li>
+            <li class="menu-item menu-item-has-children">
+              <a href="#" data-toggle="sub-menu">Pages <i class="plus"></i></a>
+              <ul class="sub-menu">
+                <li class="menu-item"><a href="#">page 1</a></li>
+                <li class="menu-item"><a href="#">page 2</a></li>
+                <li class="menu-item"><a href="#">page 3</a></li>
+                <li class="menu-item"><a href="#">page 4</a></li>
+              </ul>
+            </li>
+            <li class="menu-item">
+              <a href="#">News</a>
+            </li>
+            <li class="menu-item">
+              <a href="#">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- navigation menu end -->
+      </div>
+    </div>
+  </header>
+  <!-- Header Navigation-->
+
+  <!-- Updates Ticker -->
+  <div class="container ticker-container">
+    <div class="ticker">
+      <li><a href="http://www.bikrantgiri.com.np" title="">Lorem ipsum dolor sit amet. <span class="read-more">Read
+            More </span></a>
+      </li>
+    </div>
+  </div>
+
+  <!-- Updates Ticker End-->
+
+
+  <!-- slider section start -->
+  <section class="slider-section section-padding">
+    <div class="amazingslider-wrapper" id="amazingslider-wrapper-1"
+      style="display:block;position:relative;max-width:900px;margin:0px auto 0px;">
+      <div class="amazingslider" id="amazingslider-1" style="display:block;position:relative;margin:0 auto;">
+        <ul class="amazingslider-slides" style="display:none;">
+          <li>
+            <img src="{% static 'images/slider/1.jpg' %}" alt="1" />
+          </li>
+          <li>
+            <img src="{% static 'images/slider/2.jpg' %}" alt="2" />
+          </li>
+          <li>
+            <img src="{% static 'images/slider/3.jpg' %}" alt="3" />
+          </li>
+
+        </ul>
+      </div>
+  </section>
+  <!-- slider section end -->
+
+  <!-- Services Section -->
+  <section class="service-section section-padding">
+    <div class="container">
+      <div>
+        <h1 class="section-heading">All Services</h1>
+      </div>
+
+      <div class="service-container">
+        <!-- Single Service Item -->
+        <div class="single-service">
+          <a href="#">
+            <span class="icon"><i class="fas fa-viruses"></i></span>
+            <span>
+              <h1 class="heading">Service Heading</h1>
+            </span>
+          </a>
+        </div>
+        <!-- Single Service Item End-->
+
+        <!-- Single Service Item -->
+        <div class="single-service">
+          <a href="#">
+            <span class="icon"><i class="fas fa-viruses"></i></span>
+            <span>
+              <h1 class="heading">Service Heading</h1>
+            </span>
+          </a>
+        </div>
+        <!-- Single Service Item End-->
+
+        <!-- Single Service Item -->
+        <div class="single-service">
+          <a href="#">
+            <span class="icon"><i class="fas fa-viruses"></i></span>
+            <span>
+              <h1 class="heading">Service Heading</h1>
+            </span>
+          </a>
+        </div>
+        <!-- Single Service Item End-->
+
+        <!-- Single Service Item -->
+        <div class="single-service">
+          <a href="#">
+            <span class="icon"><i class="fas fa-viruses"></i></span>
+            <span>
+              <h1 class="heading">Service Heading</h1>
+            </span>
+          </a>
+        </div>
+        <!-- Single Service Item End-->
+
+        <!-- Single Service Item -->
+        <div class="single-service">
+          <a href="#">
+            <span class="icon"><i class="fas fa-viruses"></i></span>
+            <span>
+              <h1 class="heading">Service Heading</h1>
+            </span>
+          </a>
+        </div>
+        <!-- Single Service Item End-->
+
+        <!-- Single Service Item -->
+        <div class="single-service">
+          <a href="#">
+            <span class="icon"><i class="fas fa-viruses"></i></span>
+            <span>
+              <h1 class="heading">Service Heading</h1>
+            </span>
+          </a>
+        </div>
+        <!-- Single Service Item End-->
+
+        <!-- Single Service Item -->
+        <div class="single-service">
+          <a href="#">
+            <span class="icon"><i class="fas fa-viruses"></i></span>
+            <span>
+              <h1 class="heading">Service Heading</h1>
+            </span>
+          </a>
+        </div>
+        <!-- Single Service Item End-->
+
+        <!-- Single Service Item -->
+        <div class="single-service">
+          <a href="#">
+            <span class="icon"><i class="fas fa-viruses"></i></span>
+            <span>
+              <h1 class="heading">Service Heading</h1>
+            </span>
+          </a>
+        </div>
+        <!-- Single Service Item End-->
+
+        <!-- Single Service Item -->
+        <div class="single-service">
+          <a href="#">
+            <span class="icon"><i class="fas fa-viruses"></i></span>
+            <span>
+              <h1 class="heading">Service Heading</h1>
+            </span>
+          </a>
+        </div>
+        <!-- Single Service Item End-->
+
+        <!-- Single Service Item -->
+        <div class="single-service">
+          <a href="#">
+            <span class="icon"><i class="fas fa-viruses"></i></span>
+            <span>
+              <h1 class="heading">Service Heading</h1>
+            </span>
+          </a>
+        </div>
+        <!-- Single Service Item End-->
+
+
+      </div>
+    </div>
+  </section>
+  <!-- Services Section End -->
+
+  <!-- About Section -->
+
+  <section class="service-section section-padding">
+    <div class="container">
+      <h1 class="section-heading">Shaheed Monsur Ali Medical College আপনাকে স্বাগতম</h1>
+      <div class="about-container">
+
+        <img src="{% static 'images/logo.png' %}" alt="" srcset="">
+        <p class="description">
+          Welcome To Shaheed Monsur Ali Medical College Welcome
+
+          The college was established as the Ummah Medical College in 1994-95 in Mirpur, Dhaka. It later shifted its
+          premises to this site in 1998 under the current name Shaheed Monsur Ali Medical College and Hospital. It was
+          renamed in 2002 as the Moulana Bhasani Medical College under the Moulana Bhasani Trust. In October 2007, the
+          college shifted to its own building, which was inaugurated by the ex-chairman of the Moulana Bhasani Trust.
+          In
+          February 2009, Dr. Jamal Uddin Chowdhury was elected as chairman of the Moulana Bhasani Trust, later
+          Mrs.Laila
+          Arjumand was elected as Chairman of Moulana Bhasani Trust and Dr. Jamal Uddin Chowdhury was elected as
+          Chairman of Shaheed Monsur Ali Medical College. The institution was renamed to its current name of Shaheed
+          Monsur Ali Medical College on April 3, 2010, in the presence of the Chairman of the Moulana Bhasani Trusts.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section End -->
+
+
+  <!-- Notice Section -->
+
+  <section class="notice-section section-padding">
+    <div class="container">
+      <div class="notice-heading">
+        <h1 class="section-heading">
+          নোটিশ বোর্ড</h1>
+      </div>
+      <div class="notice-container">
+        <div id="list" class="notice-list">
+          <a>Result of First Professional MBBS Examination May-2020</a>
+          <a>Item 2</a>
+          <a>Item 3</a>
+          <a>Item 4</a>
+          <a>Item 5</a>
+          <a>Item 6</a>
+          <a>Item 7</a>
+          <a>Item 8</a>
+          <a>Item 9</a>
+          <a>Item 10</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Notice Section -->
+
+
+
+  <!-- Contact Section -->
+
+  <section class="contact-section section-padding">
+    <div class="container">
+      <div class="contact-heading">
+        <h2 class="section-heading">অভিযোগ ও পরামর্শ</h2>
+      </div>
+      <div class="contact-form-container">
+        <form method="POST" id="contactForm" name="contactForm" class="contactForm">
+          <!-- Name -->
+          <div class="">
+            <label class="label" for="name">Full Name</label>
+            <input type="text" name="name" id="name" placeholder="Name">
+          </div>
+
+          <!-- Mobile -->
+          <div class="">
+            <label class="label" for="name">Mobile Number</label>
+            <input type="text" name="name" id="name" placeholder="Name">
+          </div>
+
+          <!-- Email -->
+          <div class="">
+            <label class="label" for="name">Email</label>
+            <input type="email" name="name" id="name" placeholder="Name">
+          </div>
+
+          <!-- Message -->
+          <div class="">
+            <label class="label" for="#">Message</label>
+            <textarea name="message" id="message" cols="30" rows="4" placeholder="Message"></textarea>
+          </div>
+
+          <!-- Send -->
+          <div class="">
+            <button type="submit" class="send-btn">Send Message</button>
+            <div class="submitting"></div>
+          </div>
+        </form>
+
+        <!-- Map -->
+        {% comment %} <div class="map"> {% endcomment %}
+          <iframe class="map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3648.3043024815265!2d90.39066411542467!3d23.87882578977407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c4157662411b%3A0xdbaf144760af4c12!2sShaheed%20Monsur%20Ali%20Medical%20College%20and%20Hospital!5e0!3m2!1sen!2sbd!4v1630300684580!5m2!1sen!2sbd"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          {% comment %} </div> {% endcomment %}
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section End -->
+
+
+
+  <script src="{% static 'js/navigation.js' %}"></script>
+  <script src="{% static 'js/ticker.js' %}"></script>
+  <script src="{% static 'js/notice.js' %}"></script>
+</body>
+
+</html>

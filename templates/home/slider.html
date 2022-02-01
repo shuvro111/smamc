@@ -1,0 +1,35 @@
+{% extends 'home/index.html' %} 
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+    <title>Amazing Slider</title>
+    
+    <!-- Insert to your webpage before the </head> -->
+    <script src="slider/jquery.js"></script>
+    <script src="slider/amazingslider.js"></script>
+    <link rel="stylesheet" type="text/css" href="slider/amazingslider-1.css">
+    <script src="slider/initslider-1.js"></script>
+    <!-- End of head section HTML codes -->
+    
+</head>
+<body>
+    {% block slider %}
+    <!-- Insert to your webpage where you want to display the slider -->
+    <div class="amazingslider-wrapper" id="amazingslider-wrapper-1" style="display:block;position:relative;max-width:900px;margin:0px auto 0px;">
+        <div class="amazingslider" id="amazingslider-1" style="display:block;position:relative;margin:0 auto;">
+            <ul class="amazingslider-slides" style="display:none;">
+                <li><img src="images/1.jpg" alt="1" />
+                </li>
+                <li><img src="images/2.jpg" alt="2" />
+                </li>
+                <li><img src="images/3.jpg" alt="3" />
+                </li>
+            </ul>
+    </div>
+    <!-- End of body section HTML codes -->
+    {% endblock %}
+</body>
+</html>

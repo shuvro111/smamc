@@ -1,0 +1,128 @@
+@import url("//fonts.googleapis.com/css?family=Maven+Pro");
+
+.table-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+.container {
+  padding: 0rem 2rem;
+}
+
+.heading {
+  font-size: 1.8rem;
+  color: #222222;
+  font-weight: bold;
+  padding: 2rem 0rem;
+}
+
+table {
+  border-spacing: 1;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 6px;
+  overflow: hidden;
+  max-width: 100%;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+table * {
+  position: relative;
+}
+table td,
+table th {
+  padding-left: 8px;
+}
+table thead tr {
+  height: 60px;
+  background: #296c5c;
+  color: #ffffff;
+  font-size: 16px;
+}
+table tbody tr {
+  height: 48px;
+  border-bottom: 1px solid #e3f1d5;
+}
+table tbody tr:last-child {
+  border: 0;
+}
+table td,
+table th {
+  text-align: center;
+}
+table td.l,
+table th.l {
+  text-align: right;
+}
+table td.c,
+table th.c {
+  text-align: center;
+}
+table td.r,
+table th.r {
+  text-align: center;
+}
+@media screen and (max-width: 35.5em) {
+  table {
+    display: block;
+  }
+  table > *,
+  table tr,
+  table td,
+  table th {
+    display: block;
+  }
+  table thead {
+    display: none;
+  }
+  table tbody tr {
+    height: auto;
+    padding: 8px 0;
+  }
+  table tbody tr td {
+    padding-left: 45%;
+    margin-bottom: 12px;
+  }
+  table tbody tr td:last-child {
+    margin-bottom: 0;
+  }
+  table tbody tr td:before {
+    position: absolute;
+    font-weight: 700;
+    width: 40%;
+    left: 10px;
+    top: 0;
+  }
+  table tbody tr td:nth-child(1):before {
+    content: "Serial";
+  }
+  table tbody tr td:nth-child(2):before {
+    content: "Name";
+  }
+  table tbody tr td:nth-child(3):before {
+    content: "Designation";
+  }
+  table tbody tr td:nth-child(4):before {
+    content: "Qualification";
+  }
+  table tbody tr td:nth-child(5):before {
+    content: "Remarks";
+  }
+}
+body {
+  background: #e9fafb;
+  font-family: "Maven Pro", sans-serif;
+}
+blockquote {
+  color: white;
+  text-align: center;
+}
+@media (min-width: 1025px) {
+  /* big landscape tablets, laptops, and desktops */
+  .container {
+    padding: 0rem 10rem;
+  }
+}

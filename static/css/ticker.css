@@ -1,0 +1,35 @@
+.ticker {
+  position: relative;
+  padding: 1rem;
+  padding-left: 3rem;
+  background: #edf0ee;
+  overflow: hidden;
+  font-size: 1.6rem;
+}
+.ticker a {
+  position: relative;
+  top: 0;
+  white-space: nowrap;
+  width: auto;
+  color: #333;
+  text-decoration: none;
+}
+.ticker:before {
+  content: "Updates";
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  font-weight: bold;
+  padding: 1rem;
+  background: #296c5c;
+  z-index: 9;
+  color: #fff;
+}
+
+.read-more {
+  text-decoration: underline;
+  color: #296c5c;
+  font-weight: bold;
+  text-decoration-thickness: 2px;
+}
